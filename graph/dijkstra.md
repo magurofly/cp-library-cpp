@@ -1,6 +1,7 @@
 # ダイクストラ法（隣接リスト）
 
 隣接リスト形式のグラフと始点を受け取り、最短経路長のリストを返す。
+C++17を想定。
 
 ```c++
 template<typename T>
@@ -11,14 +12,12 @@ vector<T> dijkstra(vector<vector<pair<int, T>>>& g, int s) {
   priority_queue<P, vector<P>, greater<P>> pq;
   pq.emplace(0, s);
   while (!pq.empty()) {
-    T d;
-    int u;
-    tie(d, u) = pq.top(); pq.pop();
+    auto [d, u] = pq.top(); pq.pop();
     if (d > dist[u]) continue;
-    for (auto& e : g[u]) {
-      T d2 = d + e.second;
-      if (dist[e.first] <= d2) continue;
-      pq.emplace(dist[e.first] = d2, e.first);
+    for (auto [v, c] : g[u]) {
+      T d2 = d + c;
+      if (dist[v] <= d2) continue;
+      pq.emplace(dist[v] = d2, v);
     }
   }
   return dist;
