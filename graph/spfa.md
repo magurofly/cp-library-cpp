@@ -41,4 +41,4 @@ vector<T> spfa(vector<vector<pair<int, T>>>& g, int s) {
 ## 参考
 - [単一始点最短路(SPFA) \| Luzhiled’s memo](https://ei1333.github.io/luzhiled/snippets/graph/shortest-path-faster-algorithm.html)
 - [単一始点最短経路 (SPFA) - yaketake08's 実装メモ](https://tjkendev.github.io/procon-library/python/graph/spfa.html)
-- [ABC137-E:Coins Respawn ~負閉路検出について~ - 思考の墓場](https://sigma1113.hatenablog.com/entry/2019/08/12/130042)
+- [ABC137-E:Coins Respawn \~負閉路検出について\~ - 思考の墓場](https://sigma1113.hatenablog.com/entry/2019/08/12/130042)
