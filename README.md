@@ -4,4 +4,9 @@
 
 ## データ構造
 
-- [UnionFind](./data-structure/unionfind)
+- [UnionFind](./data-structure/unionfind.md)
+
+## グラフ
+
+- [ダイクストラ法](./graph/dijkstra.md)
+- [SPFA](./graph/spfa.md)
