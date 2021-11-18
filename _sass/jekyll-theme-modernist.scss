@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700');
 
 html {
-  background:#6C7989;
-  background: #6C7989 linear-gradient(#6C7989, #434B55) fixed;
+  background:#eeeeee;
+  background: #eeeeee linear-gradient(#cceeff, #eeeeff) fixed;
   height: 100%;
 }
 
@@ -11,7 +11,7 @@ body {
   padding:50px 0;
   margin:0;
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#555;
+  color:#222;
   font-weight:300;
   background:url('../images/checker.png') fixed;
   min-height: calc(100% - 100px);
