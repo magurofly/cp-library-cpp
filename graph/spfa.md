@@ -34,11 +34,11 @@ vector<T> spfa(vector<vector<pair<int, T>>>& g, int s) {
 ## Verify
 
 - 負辺なし
-  - [https://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=6061027#1]
+  - [https://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=6061027#1](https://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=6061027#1)
 - 負辺・負閉路あり（始点から到達できる負閉路）
-  - [https://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=6061043#1]
+  - [https://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=6061043#1](https://judge.u-aizu.ac.jp/onlinejudge/review.jsp?rid=6061043#1)
 
 ## 参考
-- [https://ei1333.github.io/luzhiled/snippets/graph/shortest-path-faster-algorithm.html]
-- [https://tjkendev.github.io/procon-library/python/graph/spfa.html]
-- [https://sigma1113.hatenablog.com/entry/2019/08/12/130042]
+- [単一始点最短路(SPFA) | Luzhiled’s memo](https://ei1333.github.io/luzhiled/snippets/graph/shortest-path-faster-algorithm.html)
+- [単一始点最短経路 (SPFA) - yaketake08's 実装メモ](https://tjkendev.github.io/procon-library/python/graph/spfa.html)
+- [ABC137-E:Coins Respawn ~負閉路検出について~ - 思考の墓場](https://sigma1113.hatenablog.com/entry/2019/08/12/130042)
