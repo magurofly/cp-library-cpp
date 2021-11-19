@@ -10,3 +10,4 @@
 
 - [ダイクストラ法](./graph/dijkstra.md)
 - [SPFA](./graph/spfa.md)
+- [ワーシャルフロイド](./graph/floyd-warshall.md)
