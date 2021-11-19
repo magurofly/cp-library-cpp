@@ -8,8 +8,9 @@
 template<typename T>
 vector<vector<T>> floyd_warshall(vector<vector<T>> g) {
   const T INF = numeric_limits<T>::max();
-  for (int k = g.size(); k--; ) g[k][k] = 0;
-  for (int k = g.size(); k--; ) for (int i = g.size(); i--; ) if (g[i][k] < INF) for (int j = g.size(); j--; ) if (g[k][j] < INF) {
+  int n = g.len();
+  for (int k = n; k--; ) g[k][k] = 0;
+  for (int k = n; k--; ) for (int i = n; i--; ) if (g[i][k] < INF) for (int j = n; j--; ) if (g[k][j] < INF) {
     int d = g[i][k] + g[k][j];
     if (g[i][j] > d) g[i][j] = d;
   }
