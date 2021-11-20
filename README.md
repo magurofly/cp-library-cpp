@@ -9,7 +9,7 @@
 ## 数学
 
 - [mod 累乗](./math/mod_pow.md)
-- [mod 逆元](./math/mod_pow.md)
+- [mod 逆元](./math/mod_inv.md)
 
 ## グラフ
 
