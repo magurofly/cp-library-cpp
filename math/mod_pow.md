@@ -1,4 +1,4 @@
-# a^e $\bmod m$
+# $a^e \bmod m$
 
 計算量: $O(\log e)$
 
