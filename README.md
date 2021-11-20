@@ -10,7 +10,7 @@
 
 - [mod 累乗](./math/mod_pow.md)
 - [mod 逆元](./math/mod_inv.md)
-- [素因数分解](./math/prime_divison.md)
+- [素因数分解](./math/prime_division.md)
 - [線形篩](./math/linear_sieve.md)
 
 ## グラフ
