@@ -1,4 +1,6 @@
-# 累乗 $\bmod m$
+# a^e $\bmod m$
+
+計算量: $O(\log e)$
 
 ```c++
 using ll = long long;
