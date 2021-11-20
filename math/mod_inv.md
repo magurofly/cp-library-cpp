@@ -4,6 +4,8 @@
 
 C++11を想定。
 
+計算量: $O(\log m)$
+
 ```c++
 using ll = long long;
 ll mod_inv(ll a, ll m) {
