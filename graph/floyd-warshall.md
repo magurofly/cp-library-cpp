@@ -10,9 +10,9 @@ vector<vector<T>> floyd_warshall(vector<vector<T>> g) {
   const T INF = numeric_limits<T>::max();
   int n = g.len();
   for (int k = n; k--; ) g[k][k] = 0;
-  for (int k = n; k--; ) for (int i = n; i--; ) if (g[i][k] < INF) for (int j = n; j--; ) if (g[k][j] < INF) {
-    int d = g[i][k] + g[k][j];
-    if (g[i][j] > d) g[i][j] = d;
+  for (int k = n; k--; ) for (auto& r : g) if (r[k] < INF) for (int j = n; j--; ) if (g[k][j] < INF) {
+    int d = r[k] + g[k][j];
+    if (r[j] > d) r[j] = d;
   }
   return g;
 }
