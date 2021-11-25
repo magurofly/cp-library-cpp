@@ -5,6 +5,7 @@
 ## データ構造
 
 - [UnionFind](./data-structure/unionfind.md)
+- [セグメント木](./data-structure/segtree.md)
 
 ## 数学
 
