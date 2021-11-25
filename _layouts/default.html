@@ -40,12 +40,14 @@
           copyButton.value = "copy";
           copyButton.className = "btn-copy";
           copyButton.dataset.clipboardTarget = `#${id}`;
-          copyButton.style.position = "relative";
+          copyButton.style.position = "absolute";
           copyButton.style.top = "0px";
           copyButton.style.right = "0px";
           pre.style.position = "relative";
           pre.appendChild(copyButton);
         }
+      
+        new ClipboardJS(".btn-copy");
     });
     </script>
 
