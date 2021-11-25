@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" integrity="sha256-Eb6SfNpZyLYBnrvqg4KFxb6vIRg+pLg9vU5Pv5QTzko=" crossorigin="anonymous"></script>
     <script>
     document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement(document.body, {
@@ -27,6 +28,24 @@
           // • rendering keys, e.g.:
           throwOnError : false
         });
+      
+        let code_num = 1;
+        for (const pre of document.getElementsByTagName("pre")) {
+          const code = pre.getElementsByTagName("code")[0];
+          if (!code) continue;
+          const id = `code-${code_num++}`;
+          code.id = id;
+          const copyButton = document.createElement("input");
+          copyButton.type = "button";
+          copyButton.value = "copy";
+          copyButton.className = "btn-copy";
+          copyButton.dataset.clipboardTarget = `#${id}`;
+          copyButton.style.position = "relative";
+          copyButton.style.top = "0px";
+          copyButton.style.right = "0px";
+          pre.style.position = "relative";
+          pre.appendChild(copyButton);
+        }
     });
     </script>
 
