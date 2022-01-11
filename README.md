@@ -1,5 +1,7 @@
 # [cp-library-cpp](https://magurofly.github.io/cp-library-cpp/)
 
+[![Actions Status](https://github.com/magurofly/cp-library-cpp/workflows/verify/badge.svg)](https://github.com/magurofly/cp-library-cpp/actions) 
+
 最低限の計算量を保ち、できる限り短く、簡素にしたライブラリ群（予定）
 
 ## データ構造
